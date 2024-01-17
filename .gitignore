@@ -21,7 +21,7 @@ yarn-error.log
 
 /public/upload/subjects/history/800
 /public/upload/subjects/history/800-no-text
-/public/upload/subjects/history/800-no-text-webp
-/public/upload/subjects/history/800-webp
-/public/upload/subjects/science
+# /public/upload/subjects/history/800-no-text-webp
+# /public/upload/subjects/history/800-webp
+# /public/upload/subjects/science
 # /public/upload/subjects/spanish
