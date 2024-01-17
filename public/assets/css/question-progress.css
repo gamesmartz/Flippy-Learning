@@ -1,0 +1,58 @@
+
+.border_container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.border_container .tenth_separator {
+    height: 100%;
+    width: 10%;
+    border: 1px solid white;
+    z-index: 100;
+}
+.border_container .third_separator {
+    height: 100%;
+    width: 33.3%;
+    border: 1px solid white;
+    z-index: 100;
+}
+
+
+.progress_left {
+    width: 65%;
+    position: relative;
+    height: 11px;
+}
+
+.progress_right {
+    width: 25%;
+    position: relative;
+    height: 11px;
+}
+
+.under_part {
+    background-color: #eee;
+    z-index: 0;
+}
+
+.progress-bar {
+    width: 0px;
+    position: absolute;
+    left: 0px;
+}
+
+.progress-bar-success {
+    z-index: 5;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #f3821f;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+

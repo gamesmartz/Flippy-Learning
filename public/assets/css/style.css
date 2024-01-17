@@ -1,0 +1,1664 @@
+/* -----  Used on All Pages Start ----- */
+
+a {
+    text-decoration: none !important;
+}
+
+.btn.disabled {
+    pointer-events: none;
+    cursor: not-allowed !important;
+    opacity: .65;
+}
+
+.gs-grey a:hover {
+    color: #969696 !important;
+}
+
+.btn {
+    cursor: pointer !important;
+}
+
+.pos-rel {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+
+/* Bootstrap Override */
+
+label {
+    margin: 0;
+}
+
+table a {
+    color: #000000;
+}
+
+table a:hover {
+    color: #000000;
+}
+
+
+/* Overriding bootstraps default padding styles - Reset to 0 */
+
+.table td,
+.table th {
+    padding: .25rem !important;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .table td,
+    .table th {
+        padding: .5rem !important;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .table td,
+    .table th {
+        padding: .75rem !important;
+    }
+}
+
+
+/* Default Drop Downs Sitewide */
+
+.dd-container {
+    display: block;
+    width: auto !important;
+    margin: 0 3px !important;
+    float: left;
+}
+
+.dd-select {
+    background-color: #059284 !important;
+    color: #FFF !important;
+    font-weight: bold;
+    border-radius: 5px !important;
+    padding-right: 20px;
+    width: auto !important;
+    border: none !important;
+}
+
+.dd-selected {
+    color: #FFF !important;
+    padding: 7px 12px !important;
+}
+
+.dd-selected:hover {
+    text-decoration: none !important;
+}
+
+.dd-pointer {
+    border-color: #FFF transparent transparent !important;
+}
+
+.select-green .dd-pointer-up {
+    border-color: transparent transparent #FFF !important;
+}
+
+.dd-options {
+    border: 4px solid #d7d7d7 !important;
+    border-radius: 6px !important;
+    margin-top: 5px !important;
+    padding: 0 7px !important;
+    white-space: nowrap !important;
+    width: auto !important;
+}
+
+.dd-option {
+    transition: none !important;
+    text-align: center;
+}
+
+.dd-option:hover {
+    color: #f57b20 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+.dd-option-text {
+    margin: 0;
+    cursor: pointer;
+    color: #000;
+}
+
+.action-dropdown .dd-options {
+    right: 0;
+    min-width: 130px !important;
+}
+
+.gs-dropdown {
+    margin: 0 !important;
+}
+
+.gs-dropdown .dd-select {
+    background-color: transparent !important;
+}
+
+.gs-dropdown .dd-selected {
+    padding: 0 5px 0 0 !important;
+    color: #a0a0a0 !important;
+    font-weight: bold;
+}
+
+.gs-dropdown .dd-pointer {
+    border-color: #4f4f4f transparent transparent !important;
+}
+
+.gs-dropdown .dd-pointer-up {
+    border-color: transparent transparent #4f4f4f !important;
+}
+
+
+/* Table Tests Formatting */
+
+.table-tests tr {
+    border-top: 1px solid #d7d7d7;
+}
+
+.table-tests tr a {
+    cursor: pointer;
+}
+
+.table-tests tr td {
+    border-top: none;
+}
+
+.table-tests thead tr {
+    border-top: none;
+}
+
+
+/* .select used to Additionally Target Drop Down Formatting */
+
+.select {
+    margin: 0 !important;
+}
+
+.select .dd-select {
+    background-color: transparent !important;
+}
+
+.select .dd-selected {
+    padding: 0 5px 0 0 !important;
+    color: #a0a0a0 !important;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.select-whitetxt .dd-selected {
+    color: #FFF !important;
+}
+
+.select .dd-pointer {
+    border-color: #4f4f4f transparent transparent !important;
+}
+
+.select .dd-pointer-up {
+    border-color: transparent transparent #4f4f4f !important;
+}
+
+.select-whitetxt .dd-pointer {
+    border-color: #FFF transparent transparent !important;
+}
+
+.select-whitetxt .dd-pointer-up {
+    border-color: transparent transparent #FFF !important;
+}
+
+
+/*  Bootstraps defalt .label override */
+
+.dd-selected label {
+    margin-bottom: 0;
+}
+
+
+/*  On Low res make fonts smaller in <table> */
+
+
+/* Small devices (landscape phones, 576px and down) */
+
+@media (max-width: 576px) {
+    .gs-table-small-font {
+        font-size: .92rem;
+    }
+}
+
+
+/* Make Bootstraps default button match exsting dropdowns */
+
+.gs-dropdown-match-btn {
+    padding: .4rem 1.4rem !important;
+    margin-bottom: 1.7rem !important;
+}
+
+
+/* Small devices (landscape phones, 576px and down) */
+
+@media (max-width: 576px) {
+    .gs-dropdown-match-btn {
+        margin-bottom: 6px !important;
+    }
+}
+
+
+/*  Spans used to keep forms a specific length */
+
+.span200 {
+    width: 200px !important;
+}
+
+
+/*   Modal Transparency from - https://codepen.io/filippoq/pen/QwogWz/ */
+
+.bmd-modalContent {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.bmd-modalContent .close {
+    font-size: 40px !important;
+    line-height: 40px !important;
+    padding: 7px 4px 7px 13px !important;
+    text-shadow: none !important;
+    opacity: .7 !important;
+    color: #fff !important;
+}
+
+.bmd-modalContent .close span {
+    display: block !important;
+}
+
+.bmd-modalContent .close:hover,
+.bmd-modalContent .close:focus {
+    opacity: 1 !important;
+    outline: none !important;
+}
+
+.bmd-modalContent iframe {
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+
+/*  Adds a 'display-5' to Bootstraps display 1-4 */
+
+.display-5 {
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+
+/* Bootstrap Pagination Override */
+
+.pagination a,
+.pagination span,
+.pagination .next,
+.pagination .prev {
+    padding: 10px 18px !important;
+    color: #6B6B6B;
+    border-color: #999;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.pagination a:hover,
+.pagination span:hover {
+    color: #f57f17 !important;
+}
+
+
+/* Sm devices (landscape phones, 576px and down) */
+
+@media (max-width: 576px) {
+    .pagination a,
+    .pagination span,
+    .pagination .next,
+    .pagination .prev {
+        padding: 5px 7px !important;
+    }
+}
+
+
+/* Font size inside bpopup Modals */
+
+.modal-wrapper {
+    font-size: 1.1rem;
+}
+
+.gs-default-form-width {
+    width: 130px !important;
+}
+
+.gs-default-drop-down-width {
+    width: 100px !important;
+}
+
+
+/* Format the Multiple Choice and Fill in the Blank */
+
+#award_time,
+.form-custom-option {
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.answer-row {
+    background: #BCDEDD;
+    border-radius: 5px;
+    margin: 8px 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.answer-row .answer-content {
+    text-align: left;
+    padding: 0 5px 0 25px;
+}
+
+.answer-row .answer-text {
+    display: block;
+    margin: 0px 0px 0px 3px;
+    /*max-width: 150px;*/
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1em;
+    padding: 8px 0;
+}
+
+.help-link {
+    display: inline-block;
+}
+
+.help-link:hover {
+    background-color: #F57B20;
+}
+
+
+/* Pagnition footer */
+
+.table-footer {
+    background-color: #6B6B6B;
+    color: #FFF;
+    padding: 13px;
+}
+
+.table-footer-absolute {
+    position: absolute;
+    bottom: 0;
+    width: 95.5%;
+}
+
+
+/* -----  Used on All Pages End ----- */
+
+
+/* -----  Used on index.php Only Start ----- */
+
+
+/* Container 1 Blue Background */
+
+.index-container-1 {
+    /* background-image: url("../images/blue-bg.jpg"); */
+    background-color: #29a4ed;
+    height: 550px;
+}
+
+@media (max-width: 575px) {
+    .index-container-1 {
+        height: 530px;
+    }
+}
+
+
+/* Titles for Every Container */
+
+.container-title {
+    font-family: 'Rosario', sans-serif;
+    font-size: 2.5rem;
+    margin: 1.5rem 0 3rem;
+}
+
+
+/* Medium devices (tablets, 768px and down) */
+
+@media (max-width: 768px) {
+    .container-title {
+        margin: 1rem 0 2rem;
+        line-height: 1.2;
+    }
+}
+
+
+/* Overrides Bootstraps Cards - They by default have no max width */
+
+.gs-index-cards .card {
+    max-width: 140px;
+}
+
+
+/* Overrides Bootstraps card-deck */
+
+.gs-index-cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* At low res, opens up the max-width */
+
+@media (max-width: 530px) {
+    .gs-download-cards .card {
+        max-width: none;
+    }
+}
+
+
+/* -----  Used on que.php Only Start ----- */
+
+
+/* Yellow on hover */
+
+.table-tests #choose-tests-table tr:hover {
+    background-color: #f9f9e2 !important;
+}
+
+.item-1 {
+    padding-left: 1rem !important;
+}
+
+
+/* Small devices (landscape phones, 576px and down) - Compensate Table When in Mobile */
+
+@media (max-width: 576px) {
+    .gs-small-table-fontsize {
+        font-size: .85rem !important;
+    }
+    .gs-small-12-col {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .item-3 {
+        padding-left: 0 !important;
+    }
+    .item-4 {
+        padding-right: 0 !important;
+    }
+}
+
+
+/* -----  Used on create-test-multiple-choice.php and create-test-fill-in-blank.php Start ----- */
+
+.gs-answers-correct .form-control,
+.gs-answers-correct .radio-button-div {
+    display: inline-block;
+}
+
+.radio-button-div input[type="radio"] {
+    display: none;
+}
+
+
+/* Height of the radio button image is 22px */
+
+.radio-button-div input[type="radio"]+label span {
+    background-image: url(../images/radio-buttons.png);
+    background-repeat: no-repeat;
+    background-position: 0px -22px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.radio-button-div input[type="radio"]:checked+label span {
+    background-position: 0px 0px;
+}
+
+
+/* Height of the radio button image is 22px */
+
+.radio-button-div {
+    height: 22px;
+}
+
+
+/* Bootstrap Override */
+
+.radio-button-div label {
+    height: 22px;
+    margin: 0;
+}
+
+
+/* In modals dont need dd-container to float left with margins */
+
+.modal-content .dd-container {
+    float: none;
+    display: inline-block;
+    margin: 0 !important;
+}
+
+
+/* Define upload audio buttons mass */
+
+.btn-uploadAudio {
+    vertical-align: top;
+    background-image: url(../images/audio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16px;
+    height: 30px;
+}
+
+.white-trash {
+    vertical-align: top;
+    background-image: url(../images/white-trash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 17px;
+    height: 30px;
+}
+
+.gs-create-tests-bg {
+    background-color: #f2f6f2;
+}
+
+
+/* -----  Used on create-test-multiple-choice.php and create-test-fill-in-blank.php End ----- */
+
+
+/* -----  Used on extras.php Start ----- */
+
+.gs-extras-table .item-2 {
+    width: 35%;
+}
+
+#reports-email,
+#report-phone {
+    max-width: 15rem;
+}
+
+
+/* -----  Used on extras.php End ----- */
+
+
+/* -----  Used on download.php Start ----- */
+
+
+/* Overrides Bootstraps Cards - They by default have no max width */
+
+.gs-download-cards .card {
+    min-width: 230px;
+    max-width: 200px;
+    margin: .5rem !important;
+}
+
+
+/* Overrides Bootstraps card-deck */
+
+.gs-download-cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* At low res, opens up the max-width */
+
+@media (max-width: 530px) {
+    .gs-download-cards .card {
+        max-width: none;
+    }
+}
+
+
+/* -----  Used on download.php End ----- */
+
+
+/* -----  Used on Admin pages Start ----- */
+
+.table-tests .admin-public {
+    background-color: #e4f4d3 !important;
+}
+
+
+/* -----  Used on Admin pages End ----- */
+
+
+/* -----  Used on test-question.php and test-question-in-game Start ----- */
+
+#question_title p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.answer-row {
+    cursor: pointer;
+}
+
+.point-row {
+    text-align: center !important;
+    color: #9CDC48;
+    font-size: 1.3em;
+}
+
+.zoom-plus,
+.zoom-minus {
+    background: #343434;
+    color: #fff !important;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/* -----  Used on reports Start ----- */
+
+#report-tests .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(247, 247, 247);
+}
+
+#report-tests .table-color-box {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+
+h2,
+.h2 {}
+
+h3,
+.h3 {}
+
+.h4-5 {
+    font-size: 2.5em;
+}
+
+.h4-2 {
+    font-size: 2.2em;
+}
+
+h4,
+.h4 {
+    font-size: 2.2em;
+}
+
+h5,
+.h5 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.p {
+    margin-bottom: 15px;
+}
+
+.pd5 {
+    padding: 5px !important;
+}
+
+.pd40 {
+    padding: 40px !important;
+}
+
+.pd25 {
+    padding: 25px !important;
+}
+
+.pd30-left {
+    padding-left: 30px !important;
+}
+
+.pd15-left {
+    padding-left: 15px !important;
+}
+
+.pb5 {
+    padding-bottom: 5px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt7 {
+    margin-top: 7px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt15-imp {
+    margin-top: 15px !important;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr5-imp {
+    margin-right: 5px !important;
+}
+
+.ml15-imp {
+    margin-left: 15px !important;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.mr35 {
+    margin-right: 35px;
+}
+
+.ml35 {
+    margin-left: 35px;
+}
+
+.ml40 {
+    margin-left: 40px;
+}
+
+.ml75 {
+    margin-left: 75px;
+}
+
+.mlneg80 {
+    margin-left: -80px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb5-imp {
+    margin-bottom: 5px !important;
+}
+
+.mr65neg {
+    margin-right: -65px;
+}
+
+.m10-imp {
+    margin: 10px !important;
+}
+
+.min-width-215 {
+    min-width: 175px !important;
+}
+
+.sp15 {
+    height: 15px;
+}
+
+.sp25 {
+    height: 25px;
+}
+
+.sp45 {
+    height: 45px;
+}
+
+.sp100 {
+    height: 100px;
+}
+
+.fs1em {
+    font-size: 1.0em;
+}
+
+.fs1-1em {
+    font-size: 1.1em;
+}
+
+.fs1-2em {
+    font-size: 1.2em;
+}
+
+.fs1-3em {
+    font-size: 1.3em;
+}
+
+.fs1-4em {
+    font-size: 1.4em;
+}
+
+.fs1-5em {
+    font-size: 1.5em;
+}
+
+.fs1-6em {
+    font-size: 1.6em;
+}
+
+.fs1-7em {
+    font-size: 1.7em;
+}
+
+.fs0-9em {
+    font-size: 0.9em !important;
+}
+
+.normalcaps {
+    text-transform: none !important;
+}
+
+.caps {
+    text-transform: uppercase !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-none {
+    float: none;
+}
+
+.left-align {
+    text-align: left !important;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.center-align-imp {
+    text-align: center !important;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.lh-1-5em {
+    line-height: 1.5em;
+}
+
+.padd-0-10 {
+    padding: 0 10%;
+}
+
+.padd-0-5 {
+    padding: 0 5%;
+}
+
+.padd-0-2 {
+    padding: 0 2%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.orange {
+    color: #f57b20 !important;
+}
+
+.playbtn-small {
+    background-image: url(../images/play-btn-small.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.playbtn-small span {
+    display: none;
+}
+
+.playbtn-small:hover {
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.39);
+}
+
+.textbox {
+    border: 1px solid #bfb2ab;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 1.2em;
+}
+
+.normal-text {
+    font-style: normal !important;
+    font-size: 0.8em;
+}
+
+.span6 {
+    width: 600px;
+}
+
+.span5 {
+    width: 500px;
+}
+
+.span4 {
+    width: 400px;
+}
+
+.span200 {
+    width: 200px;
+}
+
+.span400 {
+    width: 400px;
+}
+
+.span3 {
+    width: 300px;
+}
+
+.span2 {
+    width: 200px;
+}
+
+.span1-5 {
+    width: 150px;
+}
+
+.span1-7 {
+    width: 170px;
+}
+
+.span1-9 {
+    width: 190px;
+}
+
+.span1 {
+    width: 100px;
+}
+
+.span0-5 {
+    width: 50px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.orange {
+    color: #F57B20;
+}
+
+hr {
+    background-color: #bfb2ab;
+    border: none;
+    padding: 0;
+    height: 1px;
+    margin: 25px 0;
+}
+
+.overflow-allowed {
+    overflow: visible;
+}
+
+.normal {
+    font-style: normal !important;
+}
+
+.hide-text>span {
+    display: none;
+}
+
+header #header-wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 579px;
+}
+
+header #header-bgimg {
+    width: 100%;
+}
+
+header #logo-wrapper {
+    position: absolute;
+    left: 95px;
+    top: 20px;
+}
+
+header #signin-text,
+header #signout-text {
+    position: absolute;
+    font-size: 2em;
+    text-transform: uppercase;
+    right: 60px;
+    top: 40px;
+}
+
+header #signin-text a,
+header #signout-text a {
+    background-image: url(../images/gear-large-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px -24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+header #signin-text a:hover,
+header #signout-text a:hover {
+    background-position: 0px 0px;
+}
+
+header #playbtn-header {
+    position: absolute;
+    left: 190px;
+    top: 250px;
+    height: 161px;
+    width: 161px;
+    display: block;
+    overflow: hidden;
+}
+
+header #playbtn-header img {
+    margin-top: -161px;
+}
+
+header #playbtn-header:hover img {
+    margin-top: 0;
+}
+
+header #laptop-header {
+    position: absolute;
+    width: 100%;
+    bottom: 22px;
+    left: 5px;
+}
+
+header #header-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.menubar ul {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.menubar ul li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.menubar ul li a {
+    color: #49433d;
+    font-size: 2.2em;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.menubar ul li a:hover {
+    color: #f57b20;
+    text-decoration: none;
+}
+
+.main-body {
+    text-align: center;
+    padding: 30px 30px 0 30px;
+}
+
+.playvid-wrapper a {
+    display: block;
+    position: absolute;
+    left: 97px;
+    top: 39px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.playvid-wrapper a img {
+    margin-top: -100px;
+}
+
+.playvid-wrapper a:hover img {
+    margin-top: 0;
+}
+
+.playvid-wrapper img {
+    border-radius: 6px;
+}
+
+.tooltipsy br {
+    margin-bottom: 7px;
+}
+
+.gamethumbs-wrapper ul {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.gamethumbs-wrapper ul li {
+    display: inline-block;
+    margin: 0 25px;
+    padding-bottom: 25px;
+}
+
+.gamethumbs-wrapper ul li div:first-child {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.testimonial-wrapper ul {
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.testimonial-wrapper ul li {
+    margin: 0 32px 15px 32px;
+    display: inline-block;
+    width: 230px;
+    background-color: #e6e2dd;
+    padding: 18px;
+    vertical-align: top;
+}
+
+.testimonial-wrapper ul li p {
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.companylist-wrapper ul {
+    display: block;
+    overflow: hidden;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.companylist-wrapper ul li {
+    display: inline;
+    margin: 0 35px;
+}
+
+.orange-text {
+    color: #f57b20 !important;
+}
+
+.navlinks-sub li,
+.navlinks-profile li {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+}
+
+.footerlinks-wrapper ul {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.footerlinks-wrapper ul li {
+    display: inline;
+    margin: 0 12px;
+}
+
+.footerlinks-wrapper ul li a {
+    color: #353333;
+}
+
+.footerlinks-wrapper ul li a:hover {
+    color: #000;
+}
+
+.modal-wrapper {
+    background-color: #29a4ed;
+    color: #fff;
+    border-radius: 10px;
+    display: none;
+    padding: 25px;
+    text-align: center;
+}
+
+.modal-wrapper h3 {
+    color: #49433d;
+}
+
+.modal-wrapper p {
+    margin-bottom: 15px;
+    line-height: 1.2em;
+}
+
+.modal-wrapper a {
+    text-decoration: underline;
+}
+
+.youtube-modal-wrapper {
+    width: 904px;
+    margin-top: 40px;
+}
+
+.modal-youtube-video {
+    width: 904px;
+    margin-top: 40px;
+}
+
+.graphics-file-size-error {
+    width: 400px;
+    min-width: inherit;
+}
+
+.modal-wrapper .b-close {
+    background-image: url(../images/modal-close-btn.png);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.signin-textbox {
+    border: #bfb2ab 1px solid;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1.2em;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.header {
+    position: relative;
+    padding: 10px 10%;
+    font-size: 1.5em;
+}
+
+.logo-wrapper {
+    float: left;
+}
+
+.topmenu-links li {
+    margin-bottom: 10px;
+}
+
+.navlinks>li,
+.top-navlinks>li {
+    float: left;
+    display: block;
+    margin-right: 30px;
+    position: relative;
+}
+
+.navlinks>li {
+    margin-right: 20px;
+}
+
+.navlinks>li:last-child,
+.top-navlinks>li:last-child {
+    margin-right: 0;
+}
+
+.navlinks>li a,
+.top-navlinks>li a {
+    color: #363636;
+    font-size: 1.12em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.navlinks>li a {
+    padding: 5px 7px;
+}
+
+.navlinks a:hover,
+.navlinks a:focus,
+.top-navlinks>li>a:hover {
+    color: #f57b20;
+    text-decoration: none;
+}
+
+.navlinks>li>ul,
+.top-navlinks>li>ul {
+    visibility: hidden;
+    display: block;
+    background-color: #FFF;
+    position: absolute;
+    left: -8px;
+    border: #d7d7d7 3px solid;
+    border-radius: 4px;
+    width: 250px;
+    text-transform: uppercase;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+}
+
+.top-navlinks>li>ul {
+    width: 245px;
+    left: -145px;
+}
+
+.navlinks>li:hover>ul,
+.top-navlinks>li:hover>ul {
+    visibility: visible;
+}
+
+.top-navlinks>li>ul>li {
+    padding: 4px 12px;
+}
+
+.navlinks>li>ul>li {
+    padding: 5px 0px;
+}
+
+.navlinks>a:hover,
+.top-navlinks a:hover {
+    color: #f57b20;
+}
+
+.menulinks>ul {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.menulinks>ul>li {
+    display: inline-block;
+    float: none;
+}
+
+.display-inline-blk {
+    display: inline-block;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.icon-time {
+    background-image: url(../images/time.png);
+    background-position: left center;
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.icon-audio {
+    background-image: url(../images/audio-play.png);
+    background-repeat: no-repeat;
+    background-position: 0px -60px;
+    height: 60px;
+    display: inline-block;
+    padding-left: 76px;
+    cursor: pointer;
+}
+
+.icon-audio:hover {
+    background-position: 0px 0px;
+}
+
+.icon-next {
+    background-image: url(../images/next.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+    margin-left: 6px;
+}
+
+.icon-que-orange img {
+    margin-top: -13px;
+    vertical-align: top;
+}
+
+.icon-que-orange:hover img {
+    margin-top: 0;
+}
+
+.searchbox input {
+    border: 0 none transparent;
+    margin: 4px;
+    outline: none;
+    padding: 4px;
+    float: left;
+    width: 230px;
+}
+
+.searchbox .search-go {
+    float: right;
+    border: 0;
+    border-left: 1px solid #cac0ba;
+    width: 35px;
+    height: 32px;
+    background-image: url(../images/side-arrow-grey.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.table-tests th,
+.table-tests td {
+    padding: 15px 3px 15px 3px;
+    text-align: left;
+}
+
+.table-tests .table-tests-pagination-background {
+    padding: 15px 30px;
+    text-align: left;
+}
+
+.table-tests .testinfo-wrapper td:first-child {
+    padding-left: 5%;
+}
+
+.table-tests th {
+    background-color: #FFF !important;
+}
+
+.table-tests tr td:first-child span {
+    cursor: pointer;
+}
+
+.no-top {
+    border-top: inherit !important;
+}
+
+.create-test {
+    position: relative;
+}
+
+.table-tests .no-hover-tr:hover {
+    background-color: #f2f6f2 !important;
+}
+
+.table-tests-pagination-background {
+    background-color: #6B6B6B;
+    color: #FFF;
+}
+
+.table-tests .extras-table td {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.table-tests .extras-table td:first-child {
+    padding-left: 30px;
+}
+
+.table-tests .extras-table td:last-child {
+    padding-right: 30px;
+    text-align: left;
+}
+
+.tooltip-testinfo {
+    position: relative;
+    display: none;
+    z-index: 1000;
+}
+
+.tooltip-testinfo ul {
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 0;
+    background-color: #FFF;
+    border: 4px solid #d7d7d7;
+    border-radius: 6px;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.tooltip-testinfo ul li {
+    font-size: 1.2em;
+    display: block;
+    padding: 6px 5px;
+}
+
+.pagination ul {
+    display: block;
+}
+
+.pagination ul li {
+    float: left;
+    margin-right: 14px;
+}
+
+.pagination ul li a {
+    display: block;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 8px 12px;
+}
+
+.pagination ul li a:hover {
+    background-color: #FFF;
+    color: #f57f17;
+    text-decoration: none;
+}
+
+.view-tests-wrapper {
+    padding: 8px 12px;
+}
+
+.testinfo-wrapper {
+    background-image: url(../images/create-test-logo-background-small.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.level-wrapper {
+    font-weight: bold;
+    color: #FFF;
+    font-size: 1.2em;
+    text-align: center;
+    background-image: linear-gradient(to right, #f57b20 70%, #443c35 30%);
+    height: 50px;
+    line-height: 50px;
+}
+
+.input-file {
+    display: none;
+}
+
+.testimonial-wrapper ul li {
+    border-radius: 6px;
+}
+
+.searchbox input {
+    width: 78%;
+}

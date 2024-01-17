@@ -1,0 +1,25 @@
+.autocomplete-suggestions {
+    color: #fff;
+    background-color: #3f3f3f;
+    width: 175px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/*this is applied with css after the overlay zoom, this compensates for the fact that IE does not change the font size, nor container size with an increased zoom level*/
+.autocomplete-suggestions-after-zoom {
+    width: 400px !important;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+.autocomplete-suggestion {
+    padding: 2px 0;
+    padding-left: 6px;
+}
+
+.autocomplete-suggestion:hover {
+    background-color: #5a5a5a;
+    border-radius: 5px;
+    cursor: pointer;
+}

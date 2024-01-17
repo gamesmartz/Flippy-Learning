@@ -1,0 +1,524 @@
+body,
+.varela-round-font {
+    font-family: 'Varela Round', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.banner-vcenter {
+    min-height: calc(95vh - 200px);
+}
+
+.btn-green {
+    background-color: #58cc02;
+    color: #fff !important;
+    border-color: #58cc02;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.btn-blue {
+    background-color: #235390;
+    color: #fff !important;
+    border-color: #235390;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.text-muted {
+    color: #8ca0b9;
+}
+
+.app-link {
+    color: #1cb0f6;
+}
+
+.app-download-btn {
+    width: 200px !important;
+}
+
+.footer-section {
+    background-image: url('../images/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.get-started-btn-footer {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer-link {
+    color: #c5d2df !important;
+}
+
+
+/*****************Progress page****************/
+
+.progress-nav {
+    border-bottom: 1px solid #b3b2b2;
+}
+
+.progress-nav .main-nav img,
+.nav-bar-btn {
+    width: 24px;
+    height: 24px;
+}
+
+.progress-nav .main-nav span {
+    position: relative;
+    top: 2px;
+    text-transform: uppercase;
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.progress-nav .main-nav-icon span {
+    position: relative;
+    top: -10px;
+}
+
+.progress-nav .dropdown-menu {
+    /*width: 275px;*/
+    border-radius: 20px;
+}
+
+.progress-nav .dropdown-menu li:first-child a:hover {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.progress-nav .dropdown-menu li:last-child a:hover {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.max-w-100 {
+    max-width: 100px;
+}
+
+.f-size-13 {
+    font-size: 13px;
+}
+
+.app-card {
+    border-radius: 15px !important;
+    border-color: #b3b2b2;
+}
+
+.social-icons button,
+.form-control {
+    border: 2px solid #b3b2b2 !important;
+    border-radius: 10px;
+}
+
+.form-control {
+    text-align: center;
+}
+
+.app-link-dark {
+    color: var(--bs-body-color) !important;
+}
+
+.btn-app-primary {
+    background-color: #1db0f6 !important;
+    border-color: #1db0f6 !important;
+}
+
+.btn-app-secondary {
+    background-color: #f2811f !important;
+    border-color: #f2811f !important;
+}
+
+.bg-app-secondary {
+    background-color: #9d9d9f !important;
+}
+
+.background-volcano {
+    background-color: #1086ff;
+    background-image: url('../images/gs-mountain-background.jpg');
+    background-repeat: repeat;
+    background-position-x: 40%;
+    min-height: calc(100vh - 79px);
+}
+
+/*.webp .background-volcano {*/
+/*    background-image: url(../images/gs-mountain-background.webp);*/
+/*}*/
+
+.background-game {
+    background-color: #1086ff;
+    background-image: url('../images/gs-game-background.jpg');
+    background-repeat: repeat;
+    background-position-x: 40%;
+    min-height: 1000px;
+}
+
+.webp .background-game {
+    background-image: url(../images/gs-game-background.webp);
+}
+
+.nav-link span:hover {
+    color: #ffc800;
+}
+
+/* starts at 0 up to 600px */
+@media (max-width: 500px) {
+    .webp .background-game {
+        background-image: url(../images/gs-game-background-narrow.webp);
+    }
+}
+
+.orange-box-chapter-pages {
+    cursor: pointer;
+    margin: 15px 0;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #00acc1;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+.orange-box-chapter-pages-margin {
+    margin: 0 0 20px 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.chapter-flip-card {
+
+    /* Remove this if you don't want the 3D effect */
+
+    -ms-perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.chapter-flip-card-inner {
+    position: relative;
+
+    -ms-transition: transform 0.2s;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+    
+    transition: transform 0.2s;
+
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    
+    transform-style: preserve-3d;
+}
+
+/*  transform: rotateY was not working on mobile, switched to rotate3d */
+.chapter-transform-rotate {
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+
+    transform: rotateY(180deg);
+
+    /*transform: rotate3d(0, 1, 0, 180deg);*/
+}
+.chapter-transform-answer-hidden {
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+
+    transform: rotateY(180deg);
+
+    /*transform: rotate3d(0, 1, 0, 180deg);*/
+}
+.chapter-transform-answer-shown {
+    -ms-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+
+    transform: rotateY(0deg);
+    
+    /*transform: rotate3d(0, 1, 0, 0deg);*/
+}
+
+/* Position the front and back side */
+.chapter-flip-card-front, .chapter-flip-card-back {
+    position: absolute;
+
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.chapter-flip-card-front {
+    /*background-color: #6fb432;*/
+}
+
+/* Style the back side */
+.chapter-flip-card-back {
+    /*background-color: #6fb432;*/
+    transform: rotateY(180deg);
+}
+
+.return-to-top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.non-game-font {
+    font-size: 20px !important;
+    line-height: 30px !important;
+}
+
+/* starts at 0 up to 450px */
+@media (max-width: 450px) {
+
+    .index-text-wrap {
+        margin: 0px !important;
+        display: block;
+    }
+}
+
+.index-bottom-links-color a {
+    color: #919191;
+}
+
+.index-bottom-links-color a:hover {
+    color: #a9a9a9;
+}
+
+.white-with-orange-hover {
+    color: #fff;
+}
+
+a:hover.white-with-orange-hover {
+    color: #ffc107 !important;
+}
+
+.grey-with-orange-hover {
+    color: #d5d5d5;
+}
+
+a:hover.grey-with-orange-hover {
+    color: #ffc107 !important;
+}
+.chevron-min-width {
+    min-width: 43px;
+    position: relative;
+}
+
+.chevron-min-width-inside {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 180px;
+    width: 280px;
+    top: -90px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+/*path to images starts a css file, this sets the 'a' inline element properties like a span*/
+.chevron-min-width-inside span {
+    height: 70px;
+    width: 43px;
+    background: url(../images/chevrons.png) no-repeat;
+    background-position: 0px -70px;
+}
+
+/*on hover target child a child element instead of calling element, in this case the inline a element, but could be a span etc*/
+.chevron-min-width-inside:hover span {
+    background-position: 0px 0px;
+}
+.definitions-container {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+#Pagination.view-pagination a {
+  background-color: #fff;
+    border-radius: 5px;
+    padding: 7px;
+}
+#Pagination.view-pagination .current {
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.col-md-12 {
+    color: #000; font-family: 'Raleway', sans-serif; text-align: center; font-size: 15px;
+}
+.Pagination .current, .Pagination .next, .Pagination a {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 10000px) {
+    .definitions-image-min-height {
+        min-height: 650px;
+    }
+}
+@media (max-width: 992px) {
+    .top-menu-icons-absolute {
+        position: absolute;
+        top: 15px;
+        right: 90px;
+    }
+    .navbar-nav .nav-link {
+        padding: 5px 0;
+    }
+    .top-icons-small-absolute {
+        position: absolute; top: 15px; right: 100px;
+    }
+    .top-profile-icons-small-absolute {
+        margin-right: 12px;
+    }    
+}
+@media (max-width: 800px) {
+    .definitions-image-min-height {
+        min-height: 565px;
+    }
+}
+@media (max-width: 750px) {
+    .definitions-image-min-height {
+        min-height: 535px;
+    }
+}
+@media (max-width: 700px) {
+    .definitions-image-min-height {
+        min-height: 495px;
+    }
+}
+@media (max-width: 650px) {
+    .definitions-image-min-height {
+        min-height: 495px;
+    }
+}
+@media (max-width: 600px) {
+    .definitions-image-min-height {
+        min-height: 460px;
+    }
+}
+@media (max-width: 550px) {
+    .definitions-image-min-height {
+        min-height: 420px;
+    }
+}
+@media (max-width: 500px) {
+    .definitions-image-min-height {
+        min-height: 385px;
+    }
+}
+@media (max-width: 450px) {
+    .definitions-image-min-height {
+        min-height: 340px;
+    }
+}
+@media (max-width: 400px) {
+    .definitions-image-min-height {
+        min-height: 305px;
+    }
+    .orange-box-chapter-pages-margin {
+        margin: 0;
+    }
+}
+@media (max-width: 350px) {
+    .definitions-image-min-height {
+        min-height: 265px;
+    }
+}
+@media (max-width: 300px) {
+    .definitions-image-min-height {
+        min-height: 220px;
+    }
+}
+/* starts at 0 up to 3000px */
+@media (max-height: 3000px) {
+    .definitions-contain-max-width {
+        max-width: 800px;
+    }
+}
+/* starts at 0 up to 800px */
+@media (max-height: 800px) {
+    .definitions-contain-max-width {
+        max-width: 700px;
+    }
+}
+/* starts at 0 up to 700px */
+@media (max-height: 700px) {
+    .definitions-contain-max-width {
+        max-width: 650px;
+    }
+}
+/* starts at 0 up to 650px */
+@media (max-width: 650px) {
+    .chevron-min-width-inside {
+        height: 140px;
+        width: 165px;
+        top: -45px;
+    }
+    .chevron-min-width-inside span {
+        height: 50px;
+        width: 31px;
+        background: url(../images/chevrons-sm.png) no-repeat;
+        background-position: 0px -50px;
+    }
+    .chevron-min-width {
+        min-width: 20px;
+        height: 50px;
+    }
+}
+
+/* starts at 0 up to 600px */
+@media (max-height: 600px) {
+    .definitions-contain-max-width {
+        max-width: 550px;
+    }
+}
+/* starts at 0 up to 500px */
+@media (max-height: 500px) {
+    .definitions-contain-max-width {
+        max-width: 460px;
+    }
+}
+
+/* starts at 0 up to 400px */
+@media (max-height: 400px) {
+    .definitions-contain-max-width {
+        max-width: 360px;
+    }
+
+}
+/* starts at 0 up to 300px */
+@media (max-height: 300px) {
+    .definitions-contain-max-width {
+        max-width: 280px;
+    }
+}
