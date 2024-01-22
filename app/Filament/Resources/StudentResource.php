@@ -110,6 +110,16 @@ class StudentResource extends Resource
                             return $query->where('section_id', $data['section_id']);
                         });
                     }),
+            ])->actions([
+                Action::make('downloadPdf')
+                    ->url(function (Student $student) {
+                        return route('student.invoice.generate', $student);
+                    }),
+                    Action::make('qrCode')
+                    ->url(function (Student $record) {
+                      return static::getUrl('qrCode', ['record' => $record]);
+                    }),                 
+                Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -138,6 +148,7 @@ class StudentResource extends Resource
             'index' => Pages\ListStudents::route('/'),
             'create' => Pages\CreateStudent::route('/create'),
             'edit' => Pages\EditStudent::route('/{record}/edit'),
+            'qrCode' => Pages\GenerateQrCode::route('/{record}/qrcode'),
         ];
     }
 }

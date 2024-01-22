@@ -27,6 +27,9 @@ Route::middleware([
     })->name('dashboard');
 });
 
+// From Filament Student Setup
+    Route::get('{student}/invoice/generate', [App\Http\Controllers\InvoicesController::class, 'generatePdf'])->name('student.invoice.generate');
+
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
 
